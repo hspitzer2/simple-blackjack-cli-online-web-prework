@@ -33,7 +33,7 @@ end
    puts "Please enter a valid command"
 end
 
-def hit?(number)
+def hit?(card_total)
   prompt_user
   get_user_input
   if get_user_input == "s"
