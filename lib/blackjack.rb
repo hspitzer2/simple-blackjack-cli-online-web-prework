@@ -12,7 +12,7 @@ end
 
 def prompt_user
   puts "Type 'h' to hit or 's' to stay"
-  
+
 end
 
 def get_user_input
@@ -23,24 +23,24 @@ def end_game(number)
   puts "Sorry, you hit #{number}. Thanks for playing!"
 end
 
-```def initial_round(card_one, card_two)
-  deal_card 
-  card_one =
-  deal_card
-  card_two =
-  display_card_total = #{card_1_one} + #{card_two}
-  display_card_total
-end```
-# deal_card method twice, use the 
-# display_card_total method to puts out the sum and then return the sum. This method will call on two other helper methods, #deal_card and #display_card_total, which takes in an argument of the sum of both invocations of #deal_card.
-
-
-def hit?
-  # code hit? here
+def initial_round
+  card_total = deal_card + deal_card
+  puts display_card_total(number)
+  card_total
 end
 
-def invalid_command
-  # code invalid_command here
+def hit?(number)
+  prompt_user
+  get_user_input
+  if get_user_input == 's'
+    display_card_total
+    end_game(number)
+  elsif get_user_input == 'h'
+    card_total + deal_card
+    display_card_total(number)
+   else invalid_command
+     prompt_user
+  end
 end
 
 #####################################################
@@ -48,6 +48,10 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  #welcome method
+  #initial_round
+  #hit?
+  #display_card_total
+  #until display_card_total > 21,
+  #end_game method
 end
-    
