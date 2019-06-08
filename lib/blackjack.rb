@@ -32,15 +32,7 @@ end
 def hit?(number)
   prompt_user
   get_user_input
-  if get_user_input == 's'
-    display_card_total
-    end_game(number)
-  elsif get_user_input == 'h'
-    card_total + deal_card
-    display_card_total(number)
-   else invalid_command
-     prompt_user
-  end
+  
 end
 
 #####################################################
