@@ -47,11 +47,11 @@ end
 # get every test to pass before coding runner below #
 #####################################################
 
-def runner
+#def runner
   #welcome method
   #initial_round
   #hit?
   #display_card_total
   #until display_card_total > 21,
   #end_game method
-end
+#end
