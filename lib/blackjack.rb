@@ -29,7 +29,7 @@ def initial_round
   card_total
 end
  def invalid_command
-   puts 
+   puts
 def hit?(number)
   prompt_user
   get_user_input
