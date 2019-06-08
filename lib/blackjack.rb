@@ -6,8 +6,8 @@ def deal_card
   deal = 1 + rand(11)
 end
 
-def display_card_total(number)
-  puts "Your cards add up to #{number}"
+def display_card_total(card_total)
+  puts "Your cards add up to #{card_total}"
 end
 
 def prompt_user
@@ -34,10 +34,10 @@ def hit?(number)
   prompt_user
   get_user_input
   if get_user_input == "s"
-    display_card_total(number)
+    display_card_total(card_total)
   elsif get_user_input == "h"
     deal_card + deal_card
-    display_card_total(number)
+    display_card_total(card_total)
   else invalid_command
     puts "Please enter a valid command"
   end
