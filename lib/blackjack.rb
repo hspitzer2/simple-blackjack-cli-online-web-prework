@@ -28,8 +28,11 @@ def initial_round
   display_card_total(card_total)
   card_total
 end
+
  def invalid_command
-   puts
+   puts "Please enter a valid command"
+end
+
 def hit?(number)
   prompt_user
   get_user_input
